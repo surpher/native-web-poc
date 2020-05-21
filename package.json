@@ -4,9 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+		"start": "node index.js",
     "test": "echo \"Error: no test specified\" && exit 1",
-		"dev": "nodemon ./index.js",
-		"ui": "browser-sync start --proxy=localhost:8000 --files='**/*.css, **/*.pug, **/*.js' --ignore=node_modules --reload-delay 2 --no-ui --no-notify"
+    "dev": "nodemon ./index.js",
+    "ui": "browser-sync start --proxy=localhost:8000 --files='**/*.css, **/*.pug, **/*.js' --ignore=node_modules --reload-delay 2 --no-ui --no-notify"
   },
   "author": "",
   "license": "MIT",
