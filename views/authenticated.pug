@@ -1,0 +1,14 @@
+extends layout
+
+block layout-content
+	div.View.Authenticated
+		h1.Banner Authenticated, #{userProfile.token}!
+		div.Message
+			div.Title
+			h3 Token
+			pre.Details=JSON.stringify(userProfile, null, 2)
+		div.NavButtons
+			a(href="/back_to_app")
+				div.NavButton Back to app
+			a(href="/")
+				div.NavButton Back to /
