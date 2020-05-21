@@ -1,0 +1,13 @@
+{
+	"applinks": {
+		"details": [
+			"appIDs": ["4L73KZWFMS.com.ittybittyapps.anz-x.demo.NativeWeb"],
+			"components": [
+				{
+					"/": "/back_to_app/*",
+					"comment: "Matches any URL whose path starts with /back_to_app/"
+				}
+			]
+		]
+	}
+}

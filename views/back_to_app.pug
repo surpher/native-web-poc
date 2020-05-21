@@ -1,0 +1,9 @@
+extends layout
+
+block layout-content
+	div.View.BackToApp
+		h1.Banner Back to App bridge
+		div.Message
+			div.Title
+			h3 This should redirect back to the app...
+			pre.Details=JSON.stringify(data, null, 2)
