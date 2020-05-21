@@ -32,6 +32,18 @@ app.get("/authenticated", (req, res) => {
 	res.render("authenticated", { title: "Profile", userProfile: { token: "web-app token" } });
 });
 
+app.get("/profile", (req, res) => {
+	res.render("profile", { title: "User Profile"});
+});
+
+app.get("/integration", (req, res) => {
+	res.render("integration", { title: "Integration"});
+});
+
+app.get("/apple-app-site-association", (req, res) => {
+	res.status(200).send(`{“applinks”:{“apps”:[],“details”:[{“appID”:"PW6SVJ25U7.com.ittybittyapps.anz.x.demo.NativeWeb”,“paths”:[“*”],}]}}`);
+});
+
 /**
  * Server Activation
  */

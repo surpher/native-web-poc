@@ -1,0 +1,13 @@
+extends layout
+
+block layout-content
+	div.View.Authenticated
+		h1.Banner User Profile
+		div.Message
+			div.Title
+			span.Details User's profile page
+		div.NavButtons
+			a(href="/change_pin")
+				div.NavButton Change PIN
+			a(href="/")
+				div.NavButton Home

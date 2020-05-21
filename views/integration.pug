@@ -1,11 +1,11 @@
 extends layout
 
 block layout-content
-	div.View.Authenticated
-		h1.Banner Authenticated, #{userProfile.token}!
+	div.View.Integration
+		h1.Banner 3rd party Integration
 		div.Message
 			div.Title
-			pre.Details=JSON.stringify(userProfile, null, 2)
+			h3 Integration
 		div.NavButtons
 			a(href="/back_to_app")
 				div.NavButton Back to app
